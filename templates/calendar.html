@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block navbar %}
+    <ul>
+        <li><a  href="{{ url_for("home") }}">Home</a></li>
+        <li><a href="{{ url_for("coursecontent") }}">Course Content</a></li>
+        <li><a class="active" href="{{ url_for("calendar") }}">Calendar</a></li>
+        <li><a href="{{ url_for("coursework") }}">Coursework</a></li>
+        <li><a href="{{ url_for("links") }}">Links</a></li>
+    </ul>
+
+{% endblock %}
+
+{% block main %}
+<h3>Sticky Navigation Bar Example</h3>
+
+    <iframe src="https://calendar.google.com/calendar/embed?src=f2oogqnfo1q728k3lcbtr4v478%40group.calendar.google.com&amp;ctz=America%2FToronto" style="border: 0; margin: auto" width="90%" height="800px"  ></iframe>
+
+{% endblock %}

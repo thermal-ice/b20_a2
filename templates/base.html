@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <title >CSCB63 Coursepage</title>
+    <link rel="icon" href="{{ url_for('static',filename='b63_website_icon.png')}}">
+    <style>
+        .flex-container{
+            display: flex;
+            background-color: DodgerBlue;
+            justify-content: space-between;
+            top: 0px;
+            position: sticky;
+
+        }
+
+        .flex-container > h1{
+            line-height: 45px;
+            font-size: 2rem;
+            margin: 0;
+            {#display:inline;#}
+            font-family: Georgia,serif;
+
+        }
+
+        .flex-container > ul {
+            position: -webkit-sticky; /* Safari */
+            position: sticky;
+            {#display:inline;#}
+            justify-content: end;
+            list-style-type: none;
+
+
+          margin: 0;
+          padding: 0;
+          overflow: visible;
+          background-color: #333;
+
+          {#float:right;#}
+
+        }
+        .flex-container > img{
+            width: 10%;
+            height: auto;
+            margin: 0;
+            padding: 0;
+            overflow: visible;
+        }
+
+        li {
+          float:left;
+
+        }
+
+        li a {
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+
+        }
+
+        li a:hover:not(.active) {
+          background-color: #111;
+        }
+
+        .active {
+          background-color: #4CAF50;
+        }
+
+        .footer {
+           position: fixed;
+           left: 0;
+           bottom: 0;
+           width: 100%;
+           background-color: red;
+           color: white;
+           text-align: center;
+        }
+        .flex-container-footer{
+            display: flex;
+            {#position: fixed;#}
+            justify-content: center;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: orangered;
+            color: white;
+            text-align: center;
+        }
+        .flex-container-footer > p{
+            padding-inline: 3em;
+        }
+        .main-body{
+            display: flex;
+            background-color: #3A7734;
+            flex-direction: column;
+        }
+        .main-body > div{
+            background-color: cyan;
+        }
+        .main-body > p{
+            font-size: 3em;
+        }
+
+        .sectionStuff{
+            background-color: #177199;
+            margin: 3em;
+            padding: 2em;
+
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div class="flex-container">
+        <img src="{{ url_for('static',filename='uoftLogo.jpg')}}">
+        <h1>CSC B63 - Data Structures</h1>
+        {%block navbar%}
+        {% endblock %}
+    </div>
+
+
+
+    <div class="main-body">
+        {% block main %}
+        {% endblock %}
+
+
+    </div>
+
+
+    <footer>
+        <div class="flex-container-footer">
+            <p>Some message</p>
+            <p>another message</p>
+        </div>
+    </footer>
+
+
+
+</body>
+</html>
