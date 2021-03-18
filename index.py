@@ -27,9 +27,9 @@ def coursework():
 def links():
     return render_template("links.html")
 
-@app.route('/fun',methods=["GET"])
-def fun():
-    return render_template("links.html")
+@app.route('/blurb', methods=["GET"])
+def blurb():
+    return render_template("blurb.html")
 
 
 if __name__=='__main__':

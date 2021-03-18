@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block navbar %}
+    <ul>
+        <li><a  href="{{ url_for("home") }}">Home</a></li>
+        <li><a href="{{ url_for("coursecontent") }}">Course Content</a></li>
+        <li><a href="{{ url_for("calendar") }}">Calendar</a></li>
+        <li><a href="{{ url_for("coursework") }}">Coursework</a></li>
+        <li><a href="{{ url_for("links") }}">Links</a></li>
+    </ul>
+
+{% endblock %}
+
+{% block main %}
+
+    <div>
+        <h1 > Blurb: About Us</h1>
+
+
+        <div class="sectionStuff">
+            <h3>This is a short blrub on who we are</h3>
+            <p>
+                I like pie.
+            </p>
+
+        </div>
+
+    </div>
+
+
+{% endblock %}
