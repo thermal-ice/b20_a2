@@ -1,0 +1,119 @@
+        .flex-container{
+            display: flex;
+            background-color: DodgerBlue;
+            justify-content: space-between;
+            top: 0px;
+            position: sticky;
+
+        }
+
+        .flex-container > h1{
+            line-height: 45px;
+            font-size: 2rem;
+            margin: 0;
+            font-family: Georgia,serif;
+
+        }
+
+        .flex-container > ul {
+            position: -webkit-sticky; /* Safari */
+            position: sticky;
+            justify-content: end;
+            list-style-type: none;
+
+
+          margin: 0;
+          padding: 0;
+          overflow: visible;
+          background-color: #333;
+
+        }
+        .flex-container > img{
+            width: 10%;
+            height: auto;
+            margin: 0;
+            padding: 0;
+            overflow: visible;
+        }
+
+        li {
+          float:left;
+
+        }
+
+        li a {
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+
+        }
+
+        li a:hover:not(.active) {
+          background-color: #111;
+        }
+
+        .active {
+          background-color: #4CAF50;
+        }
+
+        .footer {
+           position: fixed;
+           left: 0;
+           bottom: 0;
+           width: 100%;
+           background-color: red;
+           color: white;
+           text-align: center;
+        }
+        .flex-container-footer{
+            display: flex;
+            justify-content: center;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: orangered;
+            color: white;
+            text-align: center;
+        }
+        .flex-container-footer > p{
+            padding-inline: 3em;
+        }
+        .main-body{
+            display: flex;
+            background-color: #3A7734;
+            flex-direction: column;
+        }
+        .main-body > div{
+            background-color: cyan;
+            text-align: center;
+        }
+
+        .main-body > p{
+            font-size: 3em;
+        }
+
+        .sectionStuff{
+            background-color: #177199;
+            margin: 4em;
+            padding: 3em;
+
+
+        }
+        .inner-flexbox{
+
+            display: flex;
+            justify-content: space-around;
+            align-items: stretch;
+            flex-direction: row;
+            background-color: #ff5d7f;
+            padding: 2em;
+            margin: 1em;
+        }
+        .inner-flexbox > p{
+            flex: 1 1 0px
+        }
+        #headerrow{
+            background-color: #72a9ff;
+        }
