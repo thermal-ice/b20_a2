@@ -16,7 +16,7 @@
         }
 
         .flex-container > ul {
-            position: -webkit-sticky; /* Safari */
+            position: -webkit-sticky;
             position: sticky;
             justify-content: end;
             list-style-type: none;
@@ -25,7 +25,7 @@
           margin: 0;
           padding: 0;
           overflow: visible;
-          background-color: #333;
+          background-color: dodgerblue;
 
         }
         .flex-container > img{
@@ -51,7 +51,7 @@
         }
 
         li a:hover:not(.active) {
-          background-color: #111;
+          background-color: rgba(47,170,146,0.45);
         }
 
         .active {
@@ -86,7 +86,7 @@
             flex-direction: column;
         }
         .main-body > div{
-            background-color: cyan;
+            background-color: yellow;
             text-align: center;
         }
 
@@ -95,7 +95,7 @@
         }
 
         .sectionStuff{
-            background-color: #177199;
+            background-color: rgba(88,149,80,0.42);
             margin: 4em;
             padding: 3em;
 
@@ -107,7 +107,7 @@
             justify-content: space-around;
             align-items: stretch;
             flex-direction: row;
-            background-color: #ff5d7f;
+            background-color: rgba(20,12,11,0.92);
             padding: 2em;
             margin: 1em;
         }
